@@ -5,6 +5,7 @@ import java.util.*;
 public class ImportantCollections {
     public static void main(String[] args) {
         Map<Integer, String> toWords = new HashMap<>();
+
         Set<String> continents = new HashSet<>();
         Set<Integer> numbers = new TreeSet<>();
         List<String> penguins = new ArrayList<>();
@@ -15,7 +16,8 @@ public class ImportantCollections {
         toWords.put(1, "One");
         toWords.put(2, "Two");
         toWords.put(3, "Three");
-        // Adding duplicate for key will be ignored
+        // Adding duplicate for key means the old one
+        // will be overwritten
         toWords.put(3, "Drei");
         System.out.println(toWords);
 
